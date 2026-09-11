@@ -72,15 +72,35 @@ function draw(){
   if(head.y<0) head.y=canvas.height-box;
   else if(head.y>=canvas.height) head.y=0;
 
-  // Self collision
+  // Self collision (UPDATED: No more alert popup!)
   if(snake.some(seg=>seg.x===head.x && seg.y===head.y)){
     clearInterval(gameInterval);
 
     gameOverSound.currentTime = 0;
     gameOverSound.play();
-
-    alert("💀 Game Over! Your score: "+score);
     updateHighScore();
+
+    // --- NEW CUSTOM GAME OVER SCREEN ---
+    // 1. Draw a dark transparent overlay
+    ctx.fillStyle = "rgba(0, 0, 0, 0.75)"; 
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // 2. Draw "Game Over" text
+    ctx.fillStyle = "white";
+    ctx.font = "bold 30px Arial";
+    ctx.textAlign = "center";
+    ctx.fillText("💀 Game Over!", canvas.width / 2, canvas.height / 2 - 20);
+
+    // 3. Draw the Score
+    ctx.fillStyle = snakeColor; // Uses your chosen snake color!
+    ctx.font = "bold 22px Arial";
+    ctx.fillText("Your Score: " + score, canvas.width / 2, canvas.height / 2 + 20);
+
+    // 4. Draw Restart instructions
+    ctx.fillStyle = "lightgray";
+    ctx.font = "16px Arial";
+    ctx.fillText("Click 'Restart' to play again", canvas.width / 2, canvas.height / 2 + 60);
+    
     return;
   }
 
