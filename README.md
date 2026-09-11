@@ -1,9 +1,9 @@
-# 🐍 JavaScript Snake Game: HTML5 Canvas & LocalStorage
+# 🐍 JavaScript Snake Game (Snake Xenzia Inspired)
 
 <div align="center">
-  <img src="https://img.shields.io/github/repo-size/Muhammad-Zubair796/Snake" alt="Repo Size" />
-  <img src="https://img.shields.io/github/downloads/Muhammad-Zubair796/Snake/total" alt="Downloads" />
-  <img src="https://img.shields.io/github/stars/Muhammad-Zubair796/Snake?style=social" alt="Stars" />
+  <img src="https://img.shields.io/github/repo-size/Muhammad-Zubair796/snake-game" alt="Repo Size" />
+  <img src="https://img.shields.io/github/downloads/Muhammad-Zubair796/snake-game/total" alt="Downloads" />
+  <img src="https://img.shields.io/github/stars/Muhammad-Zubair796/snake-game?style=social" alt="Stars" />
   <img src="https://img.shields.io/badge/Built%20With-Vanilla%20JS-yellow" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Platform-Web%20%7C%20Windows%20%7C%20Android-green" alt="Platforms" />
   <br />
@@ -14,24 +14,24 @@
 
 ---
 
-**Snake** is a highly optimized, modern recreation of the classic arcade game, built entirely with **Vanilla JavaScript** and the **HTML5 Canvas API**. Developed by **[Muhammad Zubair](https://www.mzubair.online)**, this open-source game features wrap-around mechanics, dynamic color customization, and persistent high scores using Web Storage.
+**Snake** is a highly optimized, modern web recreation of the classic retro arcade game, heavily inspired by the nostalgic **Snake Xenzia** found on classic Nokia phones. Built entirely with **Vanilla JavaScript** and the **HTML5 Canvas API** by **[Muhammad Zubair](https://www.mzubair.online)**, this open-source project brings the classic Nokia Snake experience to modern web browsers, desktop, and mobile devices.
 
-Whether you are looking to play a nostalgic game or explore clean, efficient 2D game loop logic in JavaScript, this repository serves as a perfect example of modern web game development.
+Whether you are looking to play a nostalgic game of Snake Xenzia or explore clean, efficient 2D game loop logic in JavaScript, this repository serves as a perfect example of modern web game development.
 
 ---
 
-## 🎮 Play Live
+## 🎮 Play Live (GitHub Pages)
 
-Experience the fluid 60FPS gameplay directly on my official portfolio:
+Experience the fluid 60FPS gameplay directly in your browser. No downloads required!
 
-👉 **[Play Snake Online - Official Website](https://www.mzubair.online/play/snake)**  
+👉 **[Play Snake Online - Live Demo](https://muhammad-zubair796.github.io/snake-game/)**  
 
 ---
 
 ## 📱💻 Download Native Apps (Windows & Android)
 
-[![Download EXE](https://img.shields.io/badge/Download-Windows_EXE-blue?style=for-the-badge&logo=windows)](https://github.com/Muhammad-Zubair796/Snake/releases/download/v1.0.0/Snake.by.M.Zubair.1.0.0.exe)
-[![Download APK](https://img.shields.io/badge/Download-Android_APK-green?style=for-the-badge&logo=android)](https://github.com/Muhammad-Zubair796/Snake/releases/download/v1.0.0/Snake.apk)
+[![Download EXE](https://img.shields.io/badge/Download-Windows_EXE-blue?style=for-the-badge&logo=windows)](https://github.com/Muhammad-Zubair796/snake-game/releases/download/v1.0.0/Snake.by.M.Zubair.1.0.0.exe)
+[![Download APK](https://img.shields.io/badge/Download-Android_APK-green?style=for-the-badge&logo=android)](https://github.com/Muhammad-Zubair796/snake-game/releases/download/v1.0.0/Snake.apk)
 
 *   **Windows:** Packaged using Electron for a standalone desktop experience.
 *   **Android:** Built with Cordova/WebView for full-screen mobile gameplay.
@@ -40,10 +40,10 @@ Experience the fluid 60FPS gameplay directly on my official portfolio:
 
 ## 🕹️ Core Game Features
 
-*   **Wrap-Around Board Mechanics:** Unlike traditional snake games, hitting the wall doesn't kill you. The snake seamlessly teleports to the opposite side of the canvas!
+*   **Snake Xenzia Wrap-Around Mechanics:** Just like the classic Nokia game mode, hitting the wall doesn't kill you. The snake seamlessly teleports to the opposite side of the canvas!
 *   **Customizable Snake Colors:** Use the built-in color picker to change your snake's appearance. The head uses your chosen base color, while the body dynamically lightens for a 3D-like effect.
 *   **Persistent High Scores:** Your highest score and custom color preferences are automatically saved to your browser's `LocalStorage`.
-*   **Immersive Audio:** Integrated HTML5 Audio for eating food (`eat.mp3`) and game over states (`gameover.mp3`).
+*   **Retro Audio:** Integrated HTML5 Audio for eating food and game over states (requires browser interaction to play).
 *   **Self-Collision Detection:** Precise array-based collision logic ensures the game ends only when the snake bites its own tail.
 
 ---
