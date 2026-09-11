@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake by M Zubair</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>🐍 Snake Game</h1>
+
+    <canvas id="game-board"></canvas>
+
+    <div class="info">
+      <p>Score: <span id="score">0</span></p>
+      <p>Highest: <span id="high-score">0</span></p>
+      <button id="restart-btn">Restart</button>
+    </div>
+
+    <div class="color-picker">
+      <label for="snake-color">🎨 Snake Color:</label>
+      <input type="color" id="snake-color" value="#00ff99" />
+    </div>
+
+    <!-- Sounds -->
+    <audio id="eat-sound" src="eat.mp3" preload="auto"></audio>
+    <audio id="gameover-sound" src="gameover.mp3" preload="auto"></audio>
+
+    <p class="credit">Built by M Zubair</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
